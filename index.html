@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafee - The Taste of Dubai | Premium Coffee Shop</title>
+    <meta name="description" content="Welcome to Cafee - Dubai's premium coffee shop. Crafted with passion, brewed with love. Experience the finest Arabica beans and artisanal coffee culture.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Language Switcher (Fixed) -->
+    <div class="language-switcher">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-ar" class="lang-btn" onclick="switchLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-en="Cafee" data-ar="كافي">Cafee</h2>
+                <span data-en="Dubai Coffee" data-ar="قهوة دبي">Dubai Coffee</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#products" data-en="Menu" data-ar="القائمة">Menu</a></li>
+                <li><a href="#about" data-en="About" data-ar="حولنا">About</a></li>
+                <li><a href="#testimonials" data-en="Reviews" data-ar="التقييمات">Reviews</a></li>
+                <li><a href="#blog" data-en="Blog" data-ar="المدونة">Blog</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="coffee-beans"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 data-en="Welcome to Cafee" data-ar="مرحباً بكم في كافي">Welcome to Cafee</h1>
+                <h2 data-en="The Taste of Dubai" data-ar="طعم دبي">The Taste of Dubai</h2>
+                <p data-en="Crafted with passion, brewed with love" data-ar="صُنع بشغف، حُضر بحب">Crafted with passion, brewed with love</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary" data-en="View Menu" data-ar="عرض القائمة">View Menu</a>
+                    <a href="https://talabat.com" target="_blank" class="btn btn-secondary" data-en="Order Online" data-ar="اطلب الآن">Order Online</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="coffee-cup-animation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Featured Products" data-ar="منتجاتنا المميزة">Featured Products</h2>
+                <p data-en="Discover our signature coffee creations" data-ar="اكتشف إبداعاتنا المميزة من القهوة">Discover our signature coffee creations</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <div class="product-placeholder latte"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Classic Latte" data-ar="لاتيه كلاسيكي">Classic Latte</h3>
+                        <p data-en="Smooth espresso with steamed milk" data-ar="إسبريسو ناعم مع الحليب المبخر">Smooth espresso with steamed milk</p>
+                        <div class="product-price">
+                            <span data-en="AED 18" data-ar="١٨ درهم">AED 18</span>
+                        </div>
+                        <button class="btn btn-primary" data-en="Shop Now" data-ar="اطلب الآن">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <div class="product-placeholder signature"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Signature Dubai Coffee" data-ar="قهوة دبي المميزة">Signature Dubai Coffee</h3>
+                        <p data-en="Special blend with cardamom and saffron" data-ar="مزيج خاص مع الهيل والزعفران">Special blend with cardamom and saffron</p>
+                        <div class="product-price">
+                            <span data-en="AED 25" data-ar="٢٥ درهم">AED 25</span>
+                        </div>
+                        <button class="btn btn-primary" data-en="Shop Now" data-ar="اطلب الآن">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <div class="product-placeholder mocha"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Rich Mocha" data-ar="موكا غني">Rich Mocha</h3>
+                        <p data-en="Espresso with chocolate and whipped cream" data-ar="إسبريسو مع الشوكولاتة والكريمة">Espresso with chocolate and whipped cream</p>
+                        <div class="product-price">
+                            <span data-en="AED 22" data-ar="٢٢ درهم">AED 22</span>
+                        </div>
+                        <button class="btn btn-primary" data-en="Shop Now" data-ar="اطلب الآن">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <div class="product-placeholder frappe"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Strawberry Frappe" data-ar="فرابيه الفراولة">Strawberry Frappe</h3>
+                        <p data-en="Refreshing iced coffee with strawberry" data-ar="قهوة مثلجة منعشة مع الفراولة">Refreshing iced coffee with strawberry</p>
+                        <div class="product-price">
+                            <span data-en="AED 20" data-ar="٢٠ درهم">AED 20</span>
+                        </div>
+                        <button class="btn btn-primary" data-en="Shop Now" data-ar="اطلب الآن">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="about">
+        <div class="container">
+            <div class="why-content">
+                <div class="why-text" data-aos="fade-right">
+                    <div class="section-header">
+                        <h2 data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</h2>
+                        <p data-en="Experience the finest coffee culture in Dubai" data-ar="اختبر أرقى ثقافة القهوة في دبي">Experience the finest coffee culture in Dubai</p>
+                    </div>
+                    <div class="why-features">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4 data-en="Specialty Arabica Beans" data-ar="حبوب أرابيكا مميزة">Specialty Arabica Beans</h4>
+                                <p data-en="Sourced from the finest coffee regions" data-ar="من أجود مناطق القهوة">Sourced from the finest coffee regions</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4 data-en="Freshly Roasted" data-ar="محمص طازج">Freshly Roasted</h4>
+                                <p data-en="Roasted daily for perfect flavor" data-ar="محمص يومياً للطعم المثالي">Roasted daily for perfect flavor</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4 data-en="Sustainable" data-ar="مستدام">Sustainable</h4>
+                                <p data-en="Eco-friendly and ethically sourced" data-ar="صديق للبيئة ومصدره أخلاقي">Eco-friendly and ethically sourced</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-coffee"></i>
+                            <div>
+                                <h4 data-en="Wide Variety" data-ar="تنوع واسع">Wide Variety</h4>
+                                <p data-en="Over 30 unique coffee recipes" data-ar="أكثر من ٣٠ وصفة قهوة مميزة">Over 30 unique coffee recipes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-image" data-aos="fade-left">
+                    <div class="image-placeholder coffee-beans-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">
+                        <span data-en="Years" data-ar="سنوات">Years</span><br>
+                        <small data-en="Experience" data-ar="خبرة">Experience</small>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="85">0</div>
+                    <div class="stat-label">
+                        <span data-en="%" data-ar="%">%</span><br>
+                        <small data-en="Dark Roast Preference" data-ar="تفضيل التحميص الداكن">Dark Roast Preference</small>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">
+                        <span data-en="+" data-ar="+">+</span><br>
+                        <small data-en="Coffee Recipes" data-ar="وصفات القهوة">Coffee Recipes</small>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">
+                        <span data-en="Varieties" data-ar="أصناف">Varieties</span><br>
+                        <small data-en="Coffee Beans" data-ar="حبوب القهوة">Coffee Beans</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="What Our Customers Say" data-ar="ما يقوله عملاؤنا">What Our Customers Say</h2>
+                <p data-en="Read reviews from our coffee lovers" data-ar="اقرأ تقييمات عشاق القهوة لدينا">Read reviews from our coffee lovers</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="customer-photo">
+                                <div class="photo-placeholder customer1"></div>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p data-en="The best coffee in Dubai! The signature blend is absolutely amazing." data-ar="أفضل قهوة في دبي! المزيج المميز رائع حقاً.">"The best coffee in Dubai! The signature blend is absolutely amazing."</p>
+                                <h4 data-en="Sarah Ahmed" data-ar="سارة أحمد">Sarah Ahmed</h4>
+                                <span data-en="Coffee Enthusiast" data-ar="عاشقة القهوة">Coffee Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="customer-photo">
+                                <div class="photo-placeholder customer2"></div>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p data-en="Perfect atmosphere and excellent service. My daily coffee spot!" data-ar="جو مثالي وخدمة ممتازة. مكان القهوة اليومي المفضل لدي!">"Perfect atmosphere and excellent service. My daily coffee spot!"</p>
+                                <h4 data-en="Mohammed Al-Rashid" data-ar="محمد الراشد">Mohammed Al-Rashid</h4>
+                                <span data-en="Regular Customer" data-ar="عميل دائم">Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="customer-photo">
+                                <div class="photo-placeholder customer3"></div>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p data-en="Love the variety of flavors and the cozy ambiance. Highly recommended!" data-ar="أحب تنوع النكهات والأجواء المريحة. أنصح به بشدة!">"Love the variety of flavors and the cozy ambiance. Highly recommended!"</p>
+                                <h4 data-en="Emily Johnson" data-ar="إيميلي جونسون">Emily Johnson</h4>
+                                <span data-en="Food Blogger" data-ar="مدونة طعام">Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" onclick="previousTestimonial()">‹</button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" onclick="currentTestimonial(1)"></span>
+                        <span class="dot" onclick="currentTestimonial(2)"></span>
+                        <span class="dot" onclick="currentTestimonial(3)"></span>
+                    </div>
+                    <button class="testimonial-btn" onclick="nextTestimonial()">›</button>
+                </div>
+            </div>
+            <div class="review-cta">
+                <a href="https://g.page/r/your-google-business-id/review" target="_blank" class="btn btn-outline" data-en="Leave a Review" data-ar="اترك تقييماً">Leave a Review</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Latest from Our Blog" data-ar="أحدث مقالات مدونتنا">Latest from Our Blog</h2>
+                <p data-en="Discover coffee tips, news, and culture" data-ar="اكتشف نصائح القهوة والأخبار والثقافة">Discover coffee tips, news, and culture</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <div class="blog-placeholder health"></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span data-en="Health" data-ar="الصحة">Health</span>
+                            <time data-en="Dec 15, 2024" data-ar="١٥ ديسمبر ٢٠٢٤">Dec 15, 2024</time>
+                        </div>
+                        <h3 data-en="5 Health Benefits of Coffee" data-ar="٥ فوائد صحية للقهوة">5 Health Benefits of Coffee</h3>
+                        <p data-en="Discover the amazing health benefits of drinking coffee daily and how it can improve your well-being." data-ar="اكتشف الفوائد الصحية المذهلة لشرب القهوة يومياً وكيف يمكنها تحسين صحتك.">Discover the amazing health benefits of drinking coffee daily and how it can improve your well-being.</p>
+                        <a href="blog/health-benefits.html" class="read-more" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <div class="blog-placeholder culture"></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span data-en="Culture" data-ar="الثقافة">Culture</span>
+                            <time data-en="Dec 10, 2024" data-ar="١٠ ديسمبر ٢٠٢٤">Dec 10, 2024</time>
+                        </div>
+                        <h3 data-en="Dubai's Coffee Culture Evolution" data-ar="تطور ثقافة القهوة في دبي">Dubai's Coffee Culture Evolution</h3>
+                        <p data-en="Explore how Dubai has become a global coffee destination and the rise of specialty coffee culture." data-ar="استكشف كيف أصبحت دبي وجهة عالمية للقهوة ونمو ثقافة القهوة المتخصصة.">Explore how Dubai has become a global coffee destination and the rise of specialty coffee culture.</p>
+                        <a href="blog/dubai-coffee-culture.html" class="read-more" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <div class="blog-placeholder brewing"></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span data-en="Tips" data-ar="نصائح">Tips</span>
+                            <time data-en="Dec 5, 2024" data-ar="٥ ديسمبر ٢٠٢٤">Dec 5, 2024</time>
+                        </div>
+                        <h3 data-en="Perfect Brewing Techniques" data-ar="تقنيات التحضير المثالية">Perfect Brewing Techniques</h3>
+                        <p data-en="Master the art of coffee brewing with our professional tips and techniques for the perfect cup." data-ar="أتقن فن تحضير القهوة مع نصائحنا وتقنياتنا المهنية للكوب المثالي.">Master the art of coffee brewing with our professional tips and techniques for the perfect cup.</p>
+                        <a href="blog/brewing-techniques.html" class="read-more" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="blog/index.html" class="btn btn-outline" data-en="View All Articles" data-ar="عرض جميع المقالات">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Promotion Section -->
+    <section class="app-promo" id="app">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text" data-aos="fade-right">
+                    <h2 data-en="Order your coffee on the go" data-ar="اطلب قهوتك أثناء التنقل">Order your coffee on the go</h2>
+                    <p data-en="Download our app today and enjoy exclusive offers, faster ordering, and loyalty rewards." data-ar="حمل تطبيقنا اليوم واستمتع بعروض حصرية وطلبات أسرع ومكافآت الولاء.">Download our app today and enjoy exclusive offers, faster ordering, and loyalty rewards.</p>
+                    <div class="app-features">
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span data-en="Easy Ordering" data-ar="طلب سهل">Easy Ordering</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-gift"></i>
+                            <span data-en="Exclusive Offers" data-ar="عروض حصرية">Exclusive Offers</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span data-en="Loyalty Rewards" data-ar="مكافآت الولاء">Loyalty Rewards</span>
+                        </div>
+                    </div>
+                    <div class="app-buttons">
+                        <a href="https://apps.apple.com/app/cafee" target="_blank" class="app-btn">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.cafee" target="_blank" class="app-btn">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="app-phone" data-aos="fade-left">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-interface">
+                                <div class="app-header">
+                                    <h3>Cafee</h3>
+                                    <i class="fas fa-coffee"></i>
+                                </div>
+                                <div class="app-menu">
+                                    <div class="menu-item">
+                                        <div class="item-image latte-mini"></div>
+                                        <div class="item-info">
+                                            <h4>Classic Latte</h4>
+                                            <span>AED 18</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="item-image signature-mini"></div>
+                                        <div class="item-info">
+                                            <h4>Dubai Signature</h4>
+                                            <span>AED 25</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-button">Order Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3 data-en="Cafee" data-ar="كافي">Cafee</h3>
+                        <p data-en="Dubai Coffee" data-ar="قهوة دبي">Dubai Coffee</p>
+                        <span data-en="Crafted with passion, brewed with love" data-ar="صُنع بشغف، حُضر بحب">Crafted with passion, brewed with love</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/cafee_dubai" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/cafee.dubai" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/cafee_dubai" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/cafee-dubai" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#products" data-en="Menu" data-ar="القائمة">Menu</a></li>
+                        <li><a href="#about" data-en="About Us" data-ar="حولنا">About Us</a></li>
+                        <li><a href="#testimonials" data-en="Reviews" data-ar="التقييمات">Reviews</a></li>
+                        <li><a href="#blog" data-en="Blog" data-ar="المدونة">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-ar="معلومات التواصل">Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Downtown Dubai, UAE" data-ar="وسط دبي، الإمارات">Downtown Dubai, UAE</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+971501234567">+971 50 123 4567</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@cafee.ae">hello@cafee.ae</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span data-en="7 AM - 11 PM Daily" data-ar="٧ ص - ١١ م يومياً">7 AM - 11 PM Daily</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Newsletter" data-ar="النشرة الإخبارية">Newsletter</h4>
+                    <p data-en="Subscribe to get updates and special offers" data-ar="اشترك للحصول على التحديثات والعروض الخاصة">Subscribe to get updates and special offers</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" data-placeholder-en="Enter your email" data-placeholder-ar="أدخل بريدك الإلكتروني" required>
+                        <button type="submit" data-en="Subscribe" data-ar="اشتراك">Subscribe</button>
+                    </form>
+                    <div id="newsletterMessage" class="newsletter-message"></div>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+                <div class="map-header">
+                    <h4 data-en="Visit Our Location" data-ar="زيارة موقعنا">Visit Our Location</h4>
+                </div>
+                <div class="map-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.765!2d55.2744!3d25.1972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDowntown%20Dubai%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1703875234567!5m2!1sen!2s" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-en="&copy; 2024 Cafee Dubai. All rights reserved." data-ar="&copy; ٢٠٢٤ كافي دبي. جميع الحقوق محفوظة.">&copy; 2024 Cafee Dubai. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+                        <a href="terms.html" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
